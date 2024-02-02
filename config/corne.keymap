@@ -88,6 +88,39 @@
    AS(Z) AS(X) AS(C) AS(D) AS(V)     AS(K)   AS(H)  AS(,)     AS(DOT)   AS(FSLH)
         &kp LGUI &mo 1 &kp SPACE     AS(RET) &mo 2  &kp BSPC
                         >;
+                        combos {
+                          compatible = "zmk,combos";
+                          combo_esc_left {
+                            timeout-ms = <50>;
+                            key-positions = <0 1>;
+                            bindings = <&kp ESC>;
+                          };
+                          combo_esc_right {
+                            timeout-ms = <50>;
+                            key-positions = <8 9>;
+                            bindings = <&kp ESC>;
+                          };
+                          combo_shift_left {
+                            timeout-ms = <50>;
+                            key-positions = <10 11>;
+                            bindings = <&kp LSHIFT>;
+                          };
+                          combo_shift_right {
+                            timeout-ms = <50>;
+                            key-positions = <18 19>;
+                            bindings = <&kp LSHIFT>;
+                          };
+                          combo_ctrl_left {
+                            timeout-ms = <50>;
+                            key-positions = <20 21>;
+                            bindings = <&kp LCTL>;
+                          };
+                          combo_ctrl_right {
+                            timeout-ms = <50>;
+                            key-positions = <28 29>;
+                            bindings = <&kp LCTL>;
+                          };
+                        };
                 };
 
                 lower_layer {
