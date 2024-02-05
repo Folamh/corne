@@ -90,16 +90,6 @@
                         >;
                         combos {
                           compatible = "zmk,combos";
-                          combo_esc_left {
-                            timeout-ms = <50>;
-                            key-positions = <0 1>;
-                            bindings = <&kp ESC>;
-                          };
-                          combo_esc_right {
-                            timeout-ms = <50>;
-                            key-positions = <8 9>;
-                            bindings = <&kp ESC>;
-                          };
                           combo_shift_left {
                             timeout-ms = <50>;
                             key-positions = <10 11>;
@@ -142,14 +132,14 @@
 // -----------------------------------------------------------------------------------------
 // | 1! |  2@ |  3# |  4$ |  5% |     |  6^ |  7& |  8* |  9(  |  0)  |
 // | -_ |  =+ |  {  |  [  |  (  |     |  )  |  ]  |  }  |  /?  |  \|  |
-// | `~ |     |     |  ,< |  :  |     |  ;  |  .> | CTRL| META |      |
+// | `~ |     |  '  |  ,< |  :  |     |  ;  |  .> | CTRL| META |      |
 //            | GUI | ESC | SPC |     | ENT |     | TAB |
                         display-name = "Raise";
                         bindings = <
 
    AS(N1)    AS(N2)    AS(N3)    AS(N4)    AS(N5)        AS(N6)    AS(N7)    AS(N8)    AS(N9)   AS(N0)
    AS(MINUS) AS(EQUAL) &kp LBRC  &kp LBKT  &kp LPAR      &kp RPAR  &kp RBKT  &kp RBRC  AS(FSLH) AS(BSLH)
-   AS(GRAVE) &trans    &trans    AS(COMMA) &kp COLON     &kp SEMI  AS(DOT)   &kp LCTRL &kp RALT &trans
+   AS(GRAVE) &trans    AS(SQT)   AS(COMMA) &kp COLON     &kp SEMI  AS(DOT)   &kp LCTRL &kp RALT &trans
                        &kp LGUI  &kp ESC   &kp SPACE     AS(RET)   &trans    &kp TAB
                         >;
                 };
